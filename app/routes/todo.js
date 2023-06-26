@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const Todo = require("../models/todo.model");
+const authenticator = require("../middleware/authenticator");
+
 const {
   getTodos,
   getTodo,
@@ -10,6 +12,11 @@ const {
 } = require("../controllers/todo.controller");
 
 module.exports = router;
+
+router.use(authenticator, (req, res, next) => {
+  console.log("Time:", Date.now());
+  next();
+});
 
 //get all task
 router.get("/todo", getTodos);

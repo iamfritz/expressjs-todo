@@ -43,4 +43,6 @@ module.exports = app;
 
 const PORT = process.env.PORT || 5000;
 // Start the server
-const server = app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
