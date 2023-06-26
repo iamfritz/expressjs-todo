@@ -27,3 +27,5 @@ npm run migrate
 npm run test
 
 
+## Postman
+https://documenter.getpostman.com/view/780774/2s93z86hnB#intro
