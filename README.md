@@ -19,3 +19,11 @@
 - The server runs on port 3000 <code>http://localhost:3000/</code>
 
 npm start
+
+## RUN SAMPLE API MIGRATION
+npm run migrate
+
+## RUN Test
+npm run test
+
+
